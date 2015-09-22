@@ -1,0 +1,2 @@
+# selfy
+Haskell AI experiment
