@@ -16,14 +16,15 @@ Limitations :
 - Use known Neural Network (LSTM) methods where available.
 
 Tasks :
-[ ] Neural Network that recognize a unary function from a list of input / results
-[ ] Add some way for the NN to improve overtime ( traditional NN training methods )
-[ ] Add some way for the NN to have some conception of time ( and be able to use it in efficiency calculation )
-[ ] Add some way for the NN to train/optimize itself ( unsupervised methods would be best )
-[ ] Add some way for the NN to memorize functions
-[ ] Add some way for the NN to forecast functions results from input
-[ ] Add some way for the NN to propose functions and inputs from result
-[ ] 100% test coverage... ( so that selfy can eventually generate itself one day )
+
+- [ ] Neural Network that recognize a unary function from a list of input / results
+- [ ] Add some way for the NN to improve overtime ( traditional NN training methods )
+- [ ] Add some way for the NN to have some conception of time ( and be able to use it in efficiency calculation )
+- [ ] Add some way for the NN to train/optimize itself ( unsupervised methods would be best )
+- [ ] Add some way for the NN to memorize functions
+- [ ] Add some way for the NN to forecast functions results from input
+- [ ] Add some way for the NN to propose functions and inputs from result
+- [ ] 100% test coverage... ( so that selfy can eventually generate itself one day )
 
  The main point here is to recognize patterns between inputs, functions and results. This is something existing NN methods should be able to do well enough.
 
