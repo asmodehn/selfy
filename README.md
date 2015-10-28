@@ -27,6 +27,7 @@ Tasks :
 - [ ] 100% test coverage... ( so that selfy can eventually generate itself one day )
 
  The main point here is to recognize patterns between inputs, functions and results. This is something existing NN methods should be able to do well enough.
+ That being said we need to keep in mind here that a Neural Network is a category expressing itself, and from there the most fitting category needs to be evolved via training, or other.
 
 ## Short Term Goal
 Write some Haskell program that can learn things, for example form new concepts.
@@ -37,6 +38,7 @@ Ideas :
 - Concept of factors
 - Concept of prime number
 - Concept of order, comparison
+- Full Category ( example : support a sublanguage of haskell, in which the test should be written ). Not sure which kind of category is most suitable yet.
 - Use [Hoogle](https://www.haskell.org/hoogle/) as a library to learn from
 - _add more here_
 
@@ -51,7 +53,14 @@ Ideas:
 - Extend to other languages ( python being quite a high priority )
 - Codility Training sessions : we define a list of tests to translate the question to selfy. Then we test selfy's reply in codility, and forward the feedback to selfy.
 - REST API to be able to get requests to solve problems.
+- start adding genetic evolution of the basis of the network ( find genes ).
+- think about the theory of fun and creativity, and if it is possible for NN to train each other ( after all, with Genetic programming we have a population already )
 - _add more here_
+
+Three levels of evolution interlocking into each other :
+- Network evolution : TESTS => NN/fast change => Program
+- Education evolution : TESTS => NN1 => TESTS ++ => NN2
+- Genetic evolution : NNA + NNB => NNAB
 
 ## Long Term Goal
 Once we know what components are needed to have a self-evolving learning system that can program, lets make it program itself...
@@ -73,6 +82,10 @@ For inspiration real life improvement mechanisms are :
 - in a species, weak ones dying, strong ones surviving
 - _add more here_
 
+## Somehow related stuff
+- [KLEE](https://klee.github.io/) : using LLVM bitcode, analyze all possible codepaths, and check for bugs in imperative code. Also able to generate test cases.
+
+Compared to KLEE, this project here is not planning rely on the low level ( virtual machine bitcode ) to simulate an imperative language execution behavior in order to find potential problems. Rather, simulate a functional language execution, and use the existing unit tests as a specification for the code behavior. Also, rather than generating tests around the existing code and let the user fix the code, we aim at generating code to satisfy the tests, and let the user fix the tests.
 
 ## Inspiration from
 - Test ( = Specification ) Driven Development
